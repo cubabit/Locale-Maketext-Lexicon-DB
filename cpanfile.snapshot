@@ -1,0 +1,1159 @@
+# carton snapshot format: version 1.0
+DISTRIBUTIONS
+  B-Hooks-EndOfScope-0.13
+    pathname: E/ET/ETHER/B-Hooks-EndOfScope-0.13.tar.gz
+    provides:
+      B::Hooks::EndOfScope 0.13
+      B::Hooks::EndOfScope::PP 0.13
+      B::Hooks::EndOfScope::XS 0.13
+    requirements:
+      ExtUtils::CBuilder 0.26
+      ExtUtils::MakeMaker 6.30
+      Module::Implementation 0.05
+      Module::Runtime 0.012
+      Sub::Exporter::Progressive 0.001006
+      Variable::Magic 0.48
+  Cache-Memcached-Fast-0.21
+    pathname: K/KR/KROKI/Cache-Memcached-Fast-0.21.tar.gz
+    provides:
+      Cache::Memcached::Fast 0.21
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0
+  Class-Load-0.20
+    pathname: D/DR/DROLSKY/Class-Load-0.20.tar.gz
+    provides:
+      Class::Load 0.20
+      Class::Load::Error::DieAfterBeginIsa undef
+      Class::Load::Error::DieAfterIsa undef
+      Class::Load::Error::SyntaxErrorAfterIsa undef
+      Class::Load::OK undef
+      Class::Load::PP 0.20
+      Class::Load::Stash undef
+      Class::Load::Stash::Sub undef
+      Class::Load::SyntaxError undef
+      Class::Load::VersionCheck 42
+      Class::Load::VersionCheck2 42
+    requirements:
+      Carp 0
+      Data::OptList 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.30
+      Module::Implementation 0.04
+      Module::Runtime 0.012
+      Package::Stash 0.14
+      Scalar::Util 0
+      Test::Fatal 0
+      Test::More 0.88
+      Test::Requires 0
+      Try::Tiny 0
+      base 0
+      constant 0
+      strict 0
+      version 0
+      warnings 0
+  Class-Load-XS-0.06
+    pathname: D/DR/DROLSKY/Class-Load-XS-0.06.tar.gz
+    provides:
+      Class::Load::Error::DieAfterBeginIsa undef
+      Class::Load::Error::DieAfterIsa undef
+      Class::Load::Error::SyntaxErrorAfterIsa undef
+      Class::Load::OK undef
+      Class::Load::Stash undef
+      Class::Load::Stash::Sub undef
+      Class::Load::SyntaxError undef
+      Class::Load::VersionCheck 42
+      Class::Load::VersionCheck2 42
+      Class::Load::XS 0.06
+    requirements:
+      Class::Load 0.20
+      ExtUtils::CBuilder 0
+      Module::Build 0.3601
+      Module::Implementation 0.04
+      Test::Fatal 0
+      Test::More 0.88
+      Test::Requires 0
+      XSLoader 0
+      constant 0
+      strict 0
+      version 0
+      warnings 0
+  DBD-SQLite-1.40
+    pathname: I/IS/ISHIGAKI/DBD-SQLite-1.40.tar.gz
+    provides:
+      DBD::SQLite 1.40
+      DBD::SQLite::_WriteOnceHash 1.40
+      DBD::SQLite::db 1.40
+      DBD::SQLite::dr 1.40
+    requirements:
+      DBI 1.57
+      ExtUtils::MakeMaker 0
+      File::Spec 0.82
+      Test::Builder 0.86
+      Test::More 0.47
+      Tie::Hash 0
+      perl 5.006
+  DBI-1.630
+    pathname: T/TI/TIMB/DBI-1.630.tar.gz
+    provides:
+      Bundle::DBI 12.008696
+      DBD::DBM 0.08
+      DBD::DBM::Statement 0.08
+      DBD::DBM::Table 0.08
+      DBD::DBM::db 0.08
+      DBD::DBM::dr 0.08
+      DBD::DBM::st 0.08
+      DBD::ExampleP 12.014311
+      DBD::ExampleP::db 12.014311
+      DBD::ExampleP::dr 12.014311
+      DBD::ExampleP::st 12.014311
+      DBD::File 0.42
+      DBD::File::DataSource::File 0.42
+      DBD::File::DataSource::Stream 0.42
+      DBD::File::Statement 0.42
+      DBD::File::Table 0.42
+      DBD::File::TableSource::FileSystem 0.42
+      DBD::File::db 0.42
+      DBD::File::dr 0.42
+      DBD::File::st 0.42
+      DBD::Gofer 0.015327
+      DBD::Gofer::Policy::Base 0.010088
+      DBD::Gofer::Policy::classic 0.010088
+      DBD::Gofer::Policy::pedantic 0.010088
+      DBD::Gofer::Policy::rush 0.010088
+      DBD::Gofer::Transport::Base 0.014121
+      DBD::Gofer::Transport::corostream undef
+      DBD::Gofer::Transport::null 0.010088
+      DBD::Gofer::Transport::pipeone 0.010088
+      DBD::Gofer::Transport::stream 0.014599
+      DBD::Gofer::db 0.015327
+      DBD::Gofer::dr 0.015327
+      DBD::Gofer::st 0.015327
+      DBD::NullP 12.014715
+      DBD::NullP::db 12.014715
+      DBD::NullP::dr 12.014715
+      DBD::NullP::st 12.014715
+      DBD::Proxy 0.2004
+      DBD::Proxy::RPC::PlClient 0.2004
+      DBD::Proxy::db 0.2004
+      DBD::Proxy::dr 0.2004
+      DBD::Proxy::st 0.2004
+      DBD::Sponge 12.010003
+      DBD::Sponge::db 12.010003
+      DBD::Sponge::dr 12.010003
+      DBD::Sponge::st 12.010003
+      DBDI 12.015129
+      DBI 1.630
+      DBI::Const::GetInfo::ANSI 2.008697
+      DBI::Const::GetInfo::ODBC 2.011374
+      DBI::Const::GetInfoReturn 2.008697
+      DBI::Const::GetInfoType 2.008697
+      DBI::DBD 12.015129
+      DBI::DBD::Metadata 2.014214
+      DBI::DBD::SqlEngine 0.06
+      DBI::DBD::SqlEngine::DataSource 0.06
+      DBI::DBD::SqlEngine::Statement 0.06
+      DBI::DBD::SqlEngine::Table 0.06
+      DBI::DBD::SqlEngine::TableSource 0.06
+      DBI::DBD::SqlEngine::TieMeta 0.06
+      DBI::DBD::SqlEngine::TieTables 0.06
+      DBI::DBD::SqlEngine::db 0.06
+      DBI::DBD::SqlEngine::dr 0.06
+      DBI::DBD::SqlEngine::st 0.06
+      DBI::FAQ 1.014935
+      DBI::Gofer::Execute 0.014283
+      DBI::Gofer::Request 0.012537
+      DBI::Gofer::Response 0.011566
+      DBI::Gofer::Serializer::Base 0.009950
+      DBI::Gofer::Serializer::DataDumper 0.009950
+      DBI::Gofer::Serializer::Storable 0.015586
+      DBI::Gofer::Transport::Base 0.012537
+      DBI::Gofer::Transport::pipeone 0.012537
+      DBI::Gofer::Transport::stream 0.012537
+      DBI::Profile 2.015065
+      DBI::ProfileData 2.010008
+      DBI::ProfileDumper 2.015325
+      DBI::ProfileDumper::Apache 2.014121
+      DBI::ProfileSubs 0.009396
+      DBI::ProxyServer 0.3005
+      DBI::ProxyServer::db 0.3005
+      DBI::ProxyServer::dr 0.3005
+      DBI::ProxyServer::st 0.3005
+      DBI::SQL::Nano 1.015544
+      DBI::SQL::Nano::Statement_ 1.015544
+      DBI::SQL::Nano::Table_ 1.015544
+      DBI::Util::CacheMemory 0.010315
+      DBI::Util::_accessor 0.009479
+      DBI::common 1.630
+    requirements:
+      ExtUtils::MakeMaker 6.48
+      Test::Simple 0.90
+      perl 5.008
+  Data-OptList-0.109
+    pathname: R/RJ/RJBS/Data-OptList-0.109.tar.gz
+    provides:
+      Data::OptList 0.109
+    requirements:
+      ExtUtils::MakeMaker 6.30
+      List::Util 0
+      Params::Util 0
+      Sub::Install 0.921
+      strict 0
+      warnings 0
+  Devel-GlobalDestruction-0.12
+    pathname: H/HA/HAARG/Devel-GlobalDestruction-0.12.tar.gz
+    provides:
+      Devel::GlobalDestruction 0.12
+    requirements:
+      ExtUtils::CBuilder 0.27
+      ExtUtils::MakeMaker 0
+      Sub::Exporter::Progressive 0.001011
+      perl 5.006
+  Devel-StackTrace-1.30
+    pathname: D/DR/DROLSKY/Devel-StackTrace-1.30.tar.gz
+    provides:
+      Devel::StackTrace 1.30
+      Devel::StackTrace::Frame 1.30
+    requirements:
+      ExtUtils::MakeMaker 6.30
+      File::Spec 0
+      Scalar::Util 0
+      Test::More 0.88
+      base 0
+      bytes 0
+      overload 0
+      strict 0
+      warnings 0
+  Devel-Symdump-2.11
+    pathname: A/AN/ANDK/Devel-Symdump-2.11.tar.gz
+    provides:
+      Devel::Symdump 2.11
+      Devel::Symdump::Export undef
+    requirements:
+      Compress::Zlib 0
+      ExtUtils::MakeMaker 0
+      Test::More 0
+      perl 5.004
+  Dist-CheckConflicts-0.10
+    pathname: D/DO/DOY/Dist-CheckConflicts-0.10.tar.gz
+    provides:
+      Dist::CheckConflicts 0.10
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.30
+      List::MoreUtils 0.12
+      Module::Runtime 0.009
+      base 0
+      strict 0
+      warnings 0
+  Eval-Closure-0.11
+    pathname: D/DO/DOY/Eval-Closure-0.11.tar.gz
+    provides:
+      Eval::Closure 0.11
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.30
+      Scalar::Util 0
+      Try::Tiny 0
+      constant 0
+      overload 0
+      strict 0
+      warnings 0
+  ExtUtils-Config-0.007
+    pathname: L/LE/LEONT/ExtUtils-Config-0.007.tar.gz
+    provides:
+      ExtUtils::Config 0.007
+    requirements:
+      Config 0
+      Data::Dumper 0
+      ExtUtils::MakeMaker 6.30
+      File::Find 0
+      File::Temp 0
+      Test::More 0.88
+      strict 0
+      warnings 0
+  ExtUtils-Helpers-0.021
+    pathname: L/LE/LEONT/ExtUtils-Helpers-0.021.tar.gz
+    provides:
+      ExtUtils::Helpers 0.021
+      ExtUtils::Helpers::Unix 0.021
+      ExtUtils::Helpers::VMS 0.021
+      ExtUtils::Helpers::Windows 0.021
+    requirements:
+      Carp 0
+      Config 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.30
+      File::Basename 0
+      File::Copy 0
+      File::Spec::Functions 0
+      Module::Load 0
+      Text::ParseWords 3.24
+      strict 0
+      warnings 0
+  ExtUtils-InstallPaths-0.010
+    pathname: L/LE/LEONT/ExtUtils-InstallPaths-0.010.tar.gz
+    provides:
+      ExtUtils::InstallPaths 0.010
+    requirements:
+      Carp 0
+      ExtUtils::Config 0.002
+      ExtUtils::MakeMaker 6.30
+      File::Spec 0
+      strict 0
+      warnings 0
+  List-MoreUtils-0.33
+    pathname: A/AD/ADAMK/List-MoreUtils-0.33.tar.gz
+    provides:
+      List::MoreUtils 0.33
+    requirements:
+      ExtUtils::CBuilder 0.27
+      ExtUtils::MakeMaker 6.52
+      Test::More 0.82
+      perl 5.00503
+  Log-Log4perl-1.42
+    pathname: M/MS/MSCHILLI/Log-Log4perl-1.42.tar.gz
+    provides:
+      L4pResurrectable 0.01
+      Log::Log4perl 1.42
+      Log::Log4perl::Appender undef
+      Log::Log4perl::Appender::DBI undef
+      Log::Log4perl::Appender::File undef
+      Log::Log4perl::Appender::RRDs undef
+      Log::Log4perl::Appender::Screen undef
+      Log::Log4perl::Appender::ScreenColoredLevels undef
+      Log::Log4perl::Appender::Socket undef
+      Log::Log4perl::Appender::String undef
+      Log::Log4perl::Appender::TestArrayBuffer undef
+      Log::Log4perl::Appender::TestBuffer undef
+      Log::Log4perl::Appender::TestFileCreeper undef
+      Log::Log4perl::Catalyst undef
+      Log::Log4perl::Config undef
+      Log::Log4perl::Config::BaseConfigurator undef
+      Log::Log4perl::Config::DOMConfigurator 0.03
+      Log::Log4perl::Config::PropertyConfigurator undef
+      Log::Log4perl::Config::Watch undef
+      Log::Log4perl::DateFormat undef
+      Log::Log4perl::Filter undef
+      Log::Log4perl::Filter::Boolean undef
+      Log::Log4perl::Filter::LevelMatch undef
+      Log::Log4perl::Filter::LevelRange undef
+      Log::Log4perl::Filter::MDC undef
+      Log::Log4perl::Filter::StringMatch undef
+      Log::Log4perl::InternalDebug undef
+      Log::Log4perl::JavaMap undef
+      Log::Log4perl::JavaMap::ConsoleAppender undef
+      Log::Log4perl::JavaMap::FileAppender undef
+      Log::Log4perl::JavaMap::JDBCAppender undef
+      Log::Log4perl::JavaMap::NTEventLogAppender undef
+      Log::Log4perl::JavaMap::RollingFileAppender undef
+      Log::Log4perl::JavaMap::SyslogAppender undef
+      Log::Log4perl::JavaMap::TestBuffer undef
+      Log::Log4perl::Layout undef
+      Log::Log4perl::Layout::NoopLayout undef
+      Log::Log4perl::Layout::PatternLayout undef
+      Log::Log4perl::Layout::PatternLayout::Multiline undef
+      Log::Log4perl::Layout::SimpleLayout undef
+      Log::Log4perl::Level undef
+      Log::Log4perl::Logger undef
+      Log::Log4perl::MDC undef
+      Log::Log4perl::NDC undef
+      Log::Log4perl::Resurrector undef
+      Log::Log4perl::Util undef
+      Log::Log4perl::Util::Semaphore undef
+      Log::Log4perl::Util::TimeTracker undef
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Spec 0.82
+      Test::More 0.45
+  MRO-Compat-0.12
+    pathname: B/BO/BOBTFISH/MRO-Compat-0.12.tar.gz
+    provides:
+      MRO::Compat 0.12
+    requirements:
+      ExtUtils::MakeMaker 6.59
+      Test::More 0.47
+      perl 5.006
+  Mixin-Linewise-0.104
+    pathname: R/RJ/RJBS/Mixin-Linewise-0.104.tar.gz
+    provides:
+      MLTests undef
+      Mixin::Linewise 0.104
+      Mixin::Linewise::Readers 0.104
+      Mixin::Linewise::Writers 0.104
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.30
+      IO::File 0
+      Sub::Exporter 0
+      strict 0
+      warnings 0
+  Module-Build-Tiny-0.030
+    pathname: L/LE/LEONT/Module-Build-Tiny-0.030.tar.gz
+    provides:
+      Module::Build::Tiny 0.030
+    requirements:
+      CPAN::Meta 0
+      Exporter 5.57
+      ExtUtils::CBuilder 0
+      ExtUtils::Config 0.003
+      ExtUtils::Helpers 0.020
+      ExtUtils::Install 0
+      ExtUtils::InstallPaths 0.002
+      ExtUtils::ParseXS 0
+      File::Basename 0
+      File::Find 0
+      File::Path 0
+      File::Spec::Functions 0
+      Getopt::Long 0
+      JSON::PP 2
+      Pod::Man 0
+      TAP::Harness 3.29
+      TAP::Harness::Env 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Module-Implementation-0.07
+    pathname: D/DR/DROLSKY/Module-Implementation-0.07.tar.gz
+    provides:
+      Module::Implementation 0.07
+      T::Impl1 undef
+      T::Impl2 undef
+      T::ImplFails1 undef
+      T::ImplFails2 undef
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.30
+      Module::Runtime 0.012
+      Try::Tiny 0
+      strict 0
+      warnings 0
+  Module-Runtime-0.013
+    pathname: Z/ZE/ZEFRAM/Module-Runtime-0.013.tar.gz
+    provides:
+      Module::Runtime 0.013
+    requirements:
+      Module::Build 0
+      Test::More 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Moose-2.1200
+    pathname: E/ET/ETHER/Moose-2.1200.tar.gz
+    provides:
+      Class::MOP 2.1200
+      Class::MOP::Attribute 2.1200
+      Class::MOP::Class 2.1200
+      Class::MOP::Class::Immutable::Trait undef
+      Class::MOP::Deprecated undef
+      Class::MOP::Instance 2.1200
+      Class::MOP::Method 2.1200
+      Class::MOP::Method::Accessor 2.1200
+      Class::MOP::Method::Constructor 2.1200
+      Class::MOP::Method::Generated 2.1200
+      Class::MOP::Method::Inlined 2.1200
+      Class::MOP::Method::Meta 2.1200
+      Class::MOP::Method::Overload 2.1200
+      Class::MOP::Method::Wrapped 2.1200
+      Class::MOP::MiniTrait undef
+      Class::MOP::Mixin undef
+      Class::MOP::Mixin::AttributeCore undef
+      Class::MOP::Mixin::HasAttributes undef
+      Class::MOP::Mixin::HasMethods undef
+      Class::MOP::Module 2.1200
+      Class::MOP::Object 2.1200
+      Class::MOP::Package 2.1200
+      Moose 2.1200
+      Moose::Deprecated undef
+      Moose::Exception 2.1200
+      Moose::Exception::AccessorMustReadWrite 2.1200
+      Moose::Exception::AddParameterizableTypeTakesParameterizableType 2.1200
+      Moose::Exception::AddRoleTakesAMooseMetaRoleInstance 2.1200
+      Moose::Exception::AddRoleToARoleTakesAMooseMetaRole 2.1200
+      Moose::Exception::ApplyTakesABlessedInstance 2.1200
+      Moose::Exception::AttachToClassNeedsAClassMOPClassInstanceOrASubclass 2.1200
+      Moose::Exception::AttributeConflictInRoles 2.1200
+      Moose::Exception::AttributeConflictInSummation 2.1200
+      Moose::Exception::AttributeExtensionIsNotSupportedInRoles 2.1200
+      Moose::Exception::AttributeIsRequired 2.1200
+      Moose::Exception::AttributeMustBeAnClassMOPMixinAttributeCoreOrSubclass 2.1200
+      Moose::Exception::AttributeNamesDoNotMatch 2.1200
+      Moose::Exception::AttributeValueIsNotAnObject 2.1200
+      Moose::Exception::AttributeValueIsNotDefined 2.1200
+      Moose::Exception::AutoDeRefNeedsArrayRefOrHashRef 2.1200
+      Moose::Exception::BadOptionFormat 2.1200
+      Moose::Exception::BothBuilderAndDefaultAreNotAllowed 2.1200
+      Moose::Exception::BuilderDoesNotExist 2.1200
+      Moose::Exception::BuilderMethodNotSupportedForAttribute 2.1200
+      Moose::Exception::BuilderMethodNotSupportedForInlineAttribute 2.1200
+      Moose::Exception::BuilderMustBeAMethodName 2.1200
+      Moose::Exception::CallingMethodOnAnImmutableInstance 2.1200
+      Moose::Exception::CallingReadOnlyMethodOnAnImmutableInstance 2.1200
+      Moose::Exception::CanExtendOnlyClasses 2.1200
+      Moose::Exception::CanOnlyConsumeRole 2.1200
+      Moose::Exception::CanOnlyWrapBlessedCode 2.1200
+      Moose::Exception::CanReblessOnlyIntoASubclass 2.1200
+      Moose::Exception::CanReblessOnlyIntoASuperclass 2.1200
+      Moose::Exception::CannotAddAdditionalTypeCoercionsToUnion 2.1200
+      Moose::Exception::CannotAddAsAnAttributeToARole 2.1200
+      Moose::Exception::CannotApplyBaseClassRolesToRole 2.1200
+      Moose::Exception::CannotAssignValueToReadOnlyAccessor 2.1200
+      Moose::Exception::CannotAugmentIfLocalMethodPresent 2.1200
+      Moose::Exception::CannotAugmentNoSuperMethod 2.1200
+      Moose::Exception::CannotAutoDerefWithoutIsa 2.1200
+      Moose::Exception::CannotAutoDereferenceTypeConstraint 2.1200
+      Moose::Exception::CannotCalculateNativeType 2.1200
+      Moose::Exception::CannotCallAnAbstractBaseMethod 2.1200
+      Moose::Exception::CannotCallAnAbstractMethod 2.1200
+      Moose::Exception::CannotCoerceAWeakRef 2.1200
+      Moose::Exception::CannotCoerceAttributeWhichHasNoCoercion 2.1200
+      Moose::Exception::CannotCreateHigherOrderTypeWithoutATypeParameter 2.1200
+      Moose::Exception::CannotCreateMethodAliasLocalMethodIsPresent 2.1200
+      Moose::Exception::CannotCreateMethodAliasLocalMethodIsPresentInClass 2.1200
+      Moose::Exception::CannotDelegateLocalMethodIsPresent 2.1200
+      Moose::Exception::CannotDelegateWithoutIsa 2.1200
+      Moose::Exception::CannotFindDelegateMetaclass 2.1200
+      Moose::Exception::CannotFindType 2.1200
+      Moose::Exception::CannotFindTypeGivenToMatchOnType 2.1200
+      Moose::Exception::CannotFixMetaclassCompatibility 2.1200
+      Moose::Exception::CannotGenerateInlineConstraint 2.1200
+      Moose::Exception::CannotInitializeMooseMetaRoleComposite 2.1200
+      Moose::Exception::CannotInlineTypeConstraintCheck 2.1200
+      Moose::Exception::CannotLocatePackageInINC 2.1200
+      Moose::Exception::CannotMakeMetaclassCompatible 2.1200
+      Moose::Exception::CannotOverrideALocalMethod 2.1200
+      Moose::Exception::CannotOverrideBodyOfMetaMethods 2.1200
+      Moose::Exception::CannotOverrideLocalMethodIsPresent 2.1200
+      Moose::Exception::CannotOverrideNoSuperMethod 2.1200
+      Moose::Exception::CannotRegisterUnnamedTypeConstraint 2.1200
+      Moose::Exception::CannotUseLazyBuildAndDefaultSimultaneously 2.1200
+      Moose::Exception::CircularReferenceInAlso 2.1200
+      Moose::Exception::ClassDoesNotHaveInitMeta 2.1200
+      Moose::Exception::ClassDoesTheExcludedRole 2.1200
+      Moose::Exception::ClassNamesDoNotMatch 2.1200
+      Moose::Exception::CloneObjectExpectsAnInstanceOfMetaclass 2.1200
+      Moose::Exception::CodeBlockMustBeACodeRef 2.1200
+      Moose::Exception::CoercingWithoutCoercions 2.1200
+      Moose::Exception::CoercionAlreadyExists 2.1200
+      Moose::Exception::CoercionNeedsTypeConstraint 2.1200
+      Moose::Exception::ConflictDetectedInCheckRoleExclusions 2.1200
+      Moose::Exception::ConflictDetectedInCheckRoleExclusionsInToClass 2.1200
+      Moose::Exception::ConstructClassInstanceTakesPackageName 2.1200
+      Moose::Exception::CouldNotCreateMethod 2.1200
+      Moose::Exception::CouldNotCreateWriter 2.1200
+      Moose::Exception::CouldNotEvalConstructor 2.1200
+      Moose::Exception::CouldNotEvalDestructor 2.1200
+      Moose::Exception::CouldNotFindTypeConstraintToCoerceFrom 2.1200
+      Moose::Exception::CouldNotGenerateInlineAttributeMethod 2.1200
+      Moose::Exception::CouldNotLocateTypeConstraintForUnion 2.1200
+      Moose::Exception::CouldNotParseType 2.1200
+      Moose::Exception::CreateMOPClassTakesArrayRefOfAttributes 2.1200
+      Moose::Exception::CreateMOPClassTakesArrayRefOfSuperclasses 2.1200
+      Moose::Exception::CreateMOPClassTakesHashRefOfMethods 2.1200
+      Moose::Exception::CreateTakesArrayRefOfRoles 2.1200
+      Moose::Exception::CreateTakesHashRefOfAttributes 2.1200
+      Moose::Exception::CreateTakesHashRefOfMethods 2.1200
+      Moose::Exception::DefaultToMatchOnTypeMustBeCodeRef 2.1200
+      Moose::Exception::DelegationToAClassWhichIsNotLoaded 2.1200
+      Moose::Exception::DelegationToARoleWhichIsNotLoaded 2.1200
+      Moose::Exception::DelegationToATypeWhichIsNotAClass 2.1200
+      Moose::Exception::DoesRequiresRoleName 2.1200
+      Moose::Exception::EnumCalledWithAnArrayRefAndAdditionalArgs 2.1200
+      Moose::Exception::EnumValuesMustBeString 2.1200
+      Moose::Exception::ExtendsMissingArgs 2.1200
+      Moose::Exception::HandlesMustBeAHashRef 2.1200
+      Moose::Exception::IllegalInheritedOptions 2.1200
+      Moose::Exception::IllegalMethodTypeToAddMethodModifier 2.1200
+      Moose::Exception::IncompatibleMetaclassOfSuperclass 2.1200
+      Moose::Exception::InitMetaRequiresClass 2.1200
+      Moose::Exception::InitializeTakesUnBlessedPackageName 2.1200
+      Moose::Exception::InstanceBlessedIntoWrongClass 2.1200
+      Moose::Exception::InstanceMustBeABlessedReference 2.1200
+      Moose::Exception::InvalidArgPassedToMooseUtilMetaRole 2.1200
+      Moose::Exception::InvalidArgumentToMethod 2.1200
+      Moose::Exception::InvalidArgumentsToTraitAliases 2.1200
+      Moose::Exception::InvalidBaseTypeGivenToCreateParameterizedTypeConstraint 2.1200
+      Moose::Exception::InvalidHandleValue 2.1200
+      Moose::Exception::InvalidHasProvidedInARole 2.1200
+      Moose::Exception::InvalidNameForType 2.1200
+      Moose::Exception::InvalidRoleApplication 2.1200
+      Moose::Exception::InvalidTypeConstraint 2.1200
+      Moose::Exception::InvalidTypeGivenToCreateParameterizedTypeConstraint 2.1200
+      Moose::Exception::InvalidValueForIs 2.1200
+      Moose::Exception::IsaDoesNotDoTheRole 2.1200
+      Moose::Exception::IsaLacksDoesMethod 2.1200
+      Moose::Exception::LazyAttributeNeedsADefault 2.1200
+      Moose::Exception::Legacy 2.1200
+      Moose::Exception::MOPAttributeNewNeedsAttributeName 2.1200
+      Moose::Exception::MatchActionMustBeACodeRef 2.1200
+      Moose::Exception::MessageParameterMustBeCodeRef 2.1200
+      Moose::Exception::MetaclassIsAClassNotASubclassOfGivenMetaclass 2.1200
+      Moose::Exception::MetaclassIsARoleNotASubclassOfGivenMetaclass 2.1200
+      Moose::Exception::MetaclassIsNotASubclassOfGivenMetaclass 2.1200
+      Moose::Exception::MetaclassMustBeASubclassOfMooseMetaClass 2.1200
+      Moose::Exception::MetaclassMustBeASubclassOfMooseMetaRole 2.1200
+      Moose::Exception::MetaclassMustBeDerivedFromClassMOPClass 2.1200
+      Moose::Exception::MetaclassNotLoaded 2.1200
+      Moose::Exception::MetaclassTypeIncompatible 2.1200
+      Moose::Exception::MethodExpectedAMetaclassObject 2.1200
+      Moose::Exception::MethodExpectsFewerArgs 2.1200
+      Moose::Exception::MethodExpectsMoreArgs 2.1200
+      Moose::Exception::MethodModifierNeedsMethodName 2.1200
+      Moose::Exception::MethodNameConflictInRoles 2.1200
+      Moose::Exception::MethodNameNotFoundInInheritanceHierarchy 2.1200
+      Moose::Exception::MethodNameNotGiven 2.1200
+      Moose::Exception::MustDefineAMethodName 2.1200
+      Moose::Exception::MustDefineAnAttributeName 2.1200
+      Moose::Exception::MustHaveAtLeastOneValueToEnumerate 2.1200
+      Moose::Exception::MustPassAHashOfOptions 2.1200
+      Moose::Exception::MustPassAMooseMetaRoleInstanceOrSubclass 2.1200
+      Moose::Exception::MustPassAPackageNameOrAnExistingClassMOPPackageInstance 2.1200
+      Moose::Exception::MustPassEvenNumberOfArguments 2.1200
+      Moose::Exception::MustPassEvenNumberOfAttributeOptions 2.1200
+      Moose::Exception::MustProvideANameForTheAttribute 2.1200
+      Moose::Exception::MustSpecifyAtleastOneMethod 2.1200
+      Moose::Exception::MustSpecifyAtleastOneRole 2.1200
+      Moose::Exception::MustSpecifyAtleastOneRoleToApplicant 2.1200
+      Moose::Exception::MustSupplyAClassMOPAttributeInstance 2.1200
+      Moose::Exception::MustSupplyADelegateToMethod 2.1200
+      Moose::Exception::MustSupplyAMetaclass 2.1200
+      Moose::Exception::MustSupplyAMooseMetaAttributeInstance 2.1200
+      Moose::Exception::MustSupplyAnAccessorTypeToConstructWith 2.1200
+      Moose::Exception::MustSupplyAnAttributeToConstructWith 2.1200
+      Moose::Exception::MustSupplyArrayRefAsCurriedArguments 2.1200
+      Moose::Exception::MustSupplyPackageNameAndName 2.1200
+      Moose::Exception::NeedsTypeConstraintUnionForTypeCoercionUnion 2.1200
+      Moose::Exception::NeitherAttributeNorAttributeNameIsGiven 2.1200
+      Moose::Exception::NeitherClassNorClassNameIsGiven 2.1200
+      Moose::Exception::NeitherRoleNorRoleNameIsGiven 2.1200
+      Moose::Exception::NeitherTypeNorTypeNameIsGiven 2.1200
+      Moose::Exception::NoAttributeFoundInSuperClass 2.1200
+      Moose::Exception::NoBodyToInitializeInAnAbstractBaseClass 2.1200
+      Moose::Exception::NoCasesMatched 2.1200
+      Moose::Exception::NoConstraintCheckForTypeConstraint 2.1200
+      Moose::Exception::NoDestructorClassSpecified 2.1200
+      Moose::Exception::NoImmutableTraitSpecifiedForClass 2.1200
+      Moose::Exception::NoParentGivenToSubtype 2.1200
+      Moose::Exception::OnlyInstancesCanBeCloned 2.1200
+      Moose::Exception::OperatorIsRequired 2.1200
+      Moose::Exception::OverrideConflictInComposition 2.1200
+      Moose::Exception::OverrideConflictInSummation 2.1200
+      Moose::Exception::PackageDoesNotUseMooseExporter 2.1200
+      Moose::Exception::PackageNameAndNameParamsNotGivenToWrap 2.1200
+      Moose::Exception::PackagesAndModulesAreNotCachable 2.1200
+      Moose::Exception::ParameterIsNotSubtypeOfParent 2.1200
+      Moose::Exception::ReferencesAreNotAllowedAsDefault 2.1200
+      Moose::Exception::RequiredAttributeLacksInitialization 2.1200
+      Moose::Exception::RequiredAttributeNeedsADefault 2.1200
+      Moose::Exception::RequiredMethodsImportedByClass 2.1200
+      Moose::Exception::RequiredMethodsNotImplementedByClass 2.1200
+      Moose::Exception::Role::Attribute 2.1200
+      Moose::Exception::Role::AttributeName 2.1200
+      Moose::Exception::Role::Class 2.1200
+      Moose::Exception::Role::EitherAttributeOrAttributeName 2.1200
+      Moose::Exception::Role::Instance 2.1200
+      Moose::Exception::Role::InvalidAttributeOptions 2.1200
+      Moose::Exception::Role::Method 2.1200
+      Moose::Exception::Role::ParamsHash 2.1200
+      Moose::Exception::Role::Role 2.1200
+      Moose::Exception::Role::RoleForCreate 2.1200
+      Moose::Exception::Role::RoleForCreateMOPClass 2.1200
+      Moose::Exception::Role::TypeConstraint 2.1200
+      Moose::Exception::RoleDoesTheExcludedRole 2.1200
+      Moose::Exception::RoleExclusionConflict 2.1200
+      Moose::Exception::RoleNameRequired 2.1200
+      Moose::Exception::RoleNameRequiredForMooseMetaRole 2.1200
+      Moose::Exception::RoleNamesDoNotMatch 2.1200
+      Moose::Exception::RolesDoNotSupportAugment 2.1200
+      Moose::Exception::RolesDoNotSupportExtends 2.1200
+      Moose::Exception::RolesDoNotSupportInner 2.1200
+      Moose::Exception::RolesDoNotSupportRegexReferencesForMethodModifiers 2.1200
+      Moose::Exception::RolesInCreateTakesAnArrayRef 2.1200
+      Moose::Exception::RolesListMustBeInstancesOfMooseMetaRole 2.1200
+      Moose::Exception::SingleParamsToNewMustBeHashRef 2.1200
+      Moose::Exception::TriggerMustBeACodeRef 2.1200
+      Moose::Exception::TypeConstraintCannotBeUsedForAParameterizableType 2.1200
+      Moose::Exception::TypeConstraintIsAlreadyCreated 2.1200
+      Moose::Exception::TypeNamesDoNotMatch 2.1200
+      Moose::Exception::TypeParameterMustBeMooseMetaType 2.1200
+      Moose::Exception::UnableToCanonicalizeHandles 2.1200
+      Moose::Exception::UnableToCanonicalizeNonRolePackage 2.1200
+      Moose::Exception::UnableToRecognizeDelegateMetaclass 2.1200
+      Moose::Exception::UndefinedHashKeysPassedToMethod 2.1200
+      Moose::Exception::UnionCalledWithAnArrayRefAndAdditionalArgs 2.1200
+      Moose::Exception::UnionTakesAtleastTwoTypeNames 2.1200
+      Moose::Exception::ValidationFailedForInlineTypeConstraint 2.1200
+      Moose::Exception::ValidationFailedForTypeConstraint 2.1200
+      Moose::Exception::WrapTakesACodeRefToBless 2.1200
+      Moose::Exception::WrongTypeConstraintGiven 2.1200
+      Moose::Exporter 2.1200
+      Moose::Meta::Attribute 2.1200
+      Moose::Meta::Attribute::Native 2.1200
+      Moose::Meta::Attribute::Native::Trait undef
+      Moose::Meta::Attribute::Native::Trait::Array 2.1200
+      Moose::Meta::Attribute::Native::Trait::Bool 2.1200
+      Moose::Meta::Attribute::Native::Trait::Code 2.1200
+      Moose::Meta::Attribute::Native::Trait::Counter 2.1200
+      Moose::Meta::Attribute::Native::Trait::Hash 2.1200
+      Moose::Meta::Attribute::Native::Trait::Number 2.1200
+      Moose::Meta::Attribute::Native::Trait::String 2.1200
+      Moose::Meta::Class 2.1200
+      Moose::Meta::Class::Immutable::Trait undef
+      Moose::Meta::Instance 2.1200
+      Moose::Meta::Method 2.1200
+      Moose::Meta::Method::Accessor 2.1200
+      Moose::Meta::Method::Accessor::Native undef
+      Moose::Meta::Method::Accessor::Native::Array undef
+      Moose::Meta::Method::Accessor::Native::Array::Writer undef
+      Moose::Meta::Method::Accessor::Native::Array::accessor undef
+      Moose::Meta::Method::Accessor::Native::Array::clear undef
+      Moose::Meta::Method::Accessor::Native::Array::count undef
+      Moose::Meta::Method::Accessor::Native::Array::delete undef
+      Moose::Meta::Method::Accessor::Native::Array::elements undef
+      Moose::Meta::Method::Accessor::Native::Array::first undef
+      Moose::Meta::Method::Accessor::Native::Array::first_index undef
+      Moose::Meta::Method::Accessor::Native::Array::get undef
+      Moose::Meta::Method::Accessor::Native::Array::grep undef
+      Moose::Meta::Method::Accessor::Native::Array::insert undef
+      Moose::Meta::Method::Accessor::Native::Array::is_empty undef
+      Moose::Meta::Method::Accessor::Native::Array::join undef
+      Moose::Meta::Method::Accessor::Native::Array::map undef
+      Moose::Meta::Method::Accessor::Native::Array::natatime undef
+      Moose::Meta::Method::Accessor::Native::Array::pop undef
+      Moose::Meta::Method::Accessor::Native::Array::push undef
+      Moose::Meta::Method::Accessor::Native::Array::reduce undef
+      Moose::Meta::Method::Accessor::Native::Array::set undef
+      Moose::Meta::Method::Accessor::Native::Array::shallow_clone undef
+      Moose::Meta::Method::Accessor::Native::Array::shift undef
+      Moose::Meta::Method::Accessor::Native::Array::shuffle undef
+      Moose::Meta::Method::Accessor::Native::Array::sort undef
+      Moose::Meta::Method::Accessor::Native::Array::sort_in_place undef
+      Moose::Meta::Method::Accessor::Native::Array::splice undef
+      Moose::Meta::Method::Accessor::Native::Array::uniq undef
+      Moose::Meta::Method::Accessor::Native::Array::unshift undef
+      Moose::Meta::Method::Accessor::Native::Bool::not undef
+      Moose::Meta::Method::Accessor::Native::Bool::set undef
+      Moose::Meta::Method::Accessor::Native::Bool::toggle undef
+      Moose::Meta::Method::Accessor::Native::Bool::unset undef
+      Moose::Meta::Method::Accessor::Native::Code::execute undef
+      Moose::Meta::Method::Accessor::Native::Code::execute_method undef
+      Moose::Meta::Method::Accessor::Native::Collection undef
+      Moose::Meta::Method::Accessor::Native::Counter::Writer undef
+      Moose::Meta::Method::Accessor::Native::Counter::dec undef
+      Moose::Meta::Method::Accessor::Native::Counter::inc undef
+      Moose::Meta::Method::Accessor::Native::Counter::reset undef
+      Moose::Meta::Method::Accessor::Native::Counter::set undef
+      Moose::Meta::Method::Accessor::Native::Hash undef
+      Moose::Meta::Method::Accessor::Native::Hash::Writer undef
+      Moose::Meta::Method::Accessor::Native::Hash::accessor undef
+      Moose::Meta::Method::Accessor::Native::Hash::clear undef
+      Moose::Meta::Method::Accessor::Native::Hash::count undef
+      Moose::Meta::Method::Accessor::Native::Hash::defined undef
+      Moose::Meta::Method::Accessor::Native::Hash::delete undef
+      Moose::Meta::Method::Accessor::Native::Hash::elements undef
+      Moose::Meta::Method::Accessor::Native::Hash::exists undef
+      Moose::Meta::Method::Accessor::Native::Hash::get undef
+      Moose::Meta::Method::Accessor::Native::Hash::is_empty undef
+      Moose::Meta::Method::Accessor::Native::Hash::keys undef
+      Moose::Meta::Method::Accessor::Native::Hash::kv undef
+      Moose::Meta::Method::Accessor::Native::Hash::set undef
+      Moose::Meta::Method::Accessor::Native::Hash::shallow_clone undef
+      Moose::Meta::Method::Accessor::Native::Hash::values undef
+      Moose::Meta::Method::Accessor::Native::Number::abs undef
+      Moose::Meta::Method::Accessor::Native::Number::add undef
+      Moose::Meta::Method::Accessor::Native::Number::div undef
+      Moose::Meta::Method::Accessor::Native::Number::mod undef
+      Moose::Meta::Method::Accessor::Native::Number::mul undef
+      Moose::Meta::Method::Accessor::Native::Number::set undef
+      Moose::Meta::Method::Accessor::Native::Number::sub undef
+      Moose::Meta::Method::Accessor::Native::Reader undef
+      Moose::Meta::Method::Accessor::Native::String::append undef
+      Moose::Meta::Method::Accessor::Native::String::chomp undef
+      Moose::Meta::Method::Accessor::Native::String::chop undef
+      Moose::Meta::Method::Accessor::Native::String::clear undef
+      Moose::Meta::Method::Accessor::Native::String::inc undef
+      Moose::Meta::Method::Accessor::Native::String::length undef
+      Moose::Meta::Method::Accessor::Native::String::match undef
+      Moose::Meta::Method::Accessor::Native::String::prepend undef
+      Moose::Meta::Method::Accessor::Native::String::replace undef
+      Moose::Meta::Method::Accessor::Native::String::substr undef
+      Moose::Meta::Method::Accessor::Native::Writer undef
+      Moose::Meta::Method::Augmented 2.1200
+      Moose::Meta::Method::Constructor 2.1200
+      Moose::Meta::Method::Delegation 2.1200
+      Moose::Meta::Method::Destructor 2.1200
+      Moose::Meta::Method::Meta 2.1200
+      Moose::Meta::Method::Overridden 2.1200
+      Moose::Meta::Mixin::AttributeCore undef
+      Moose::Meta::Object::Trait undef
+      Moose::Meta::Role 2.1200
+      Moose::Meta::Role::Application 2.1200
+      Moose::Meta::Role::Application::RoleSummation 2.1200
+      Moose::Meta::Role::Application::ToClass 2.1200
+      Moose::Meta::Role::Application::ToInstance 2.1200
+      Moose::Meta::Role::Application::ToRole 2.1200
+      Moose::Meta::Role::Attribute 2.1200
+      Moose::Meta::Role::Composite 2.1200
+      Moose::Meta::Role::Method 2.1200
+      Moose::Meta::Role::Method::Conflicting 2.1200
+      Moose::Meta::Role::Method::Required 2.1200
+      Moose::Meta::TypeCoercion 2.1200
+      Moose::Meta::TypeCoercion::Union 2.1200
+      Moose::Meta::TypeConstraint 2.1200
+      Moose::Meta::TypeConstraint::Class 2.1200
+      Moose::Meta::TypeConstraint::DuckType 2.1200
+      Moose::Meta::TypeConstraint::Enum 2.1200
+      Moose::Meta::TypeConstraint::Parameterizable 2.1200
+      Moose::Meta::TypeConstraint::Parameterized 2.1200
+      Moose::Meta::TypeConstraint::Registry 2.1200
+      Moose::Meta::TypeConstraint::Role 2.1200
+      Moose::Meta::TypeConstraint::Union 2.1200
+      Moose::Object 2.1200
+      Moose::Role 2.1200
+      Moose::Util 2.1200
+      Moose::Util::MetaRole 2.1200
+      Moose::Util::TypeConstraints 2.1200
+      Moose::Util::TypeConstraints::Builtins undef
+      Test::Moose 2.1200
+      metaclass 2.1200
+      oose 2.1200
+    requirements:
+      Carp 1.22
+      Class::Load 0.09
+      Class::Load::XS 0.01
+      Data::OptList 0.107
+      Devel::GlobalDestruction 0
+      Devel::StackTrace 1.30
+      Dist::CheckConflicts 0.02
+      Eval::Closure 0.04
+      ExtUtils::CBuilder 0.27
+      ExtUtils::MakeMaker 6.30
+      File::Spec 0
+      List::MoreUtils 0.28
+      MRO::Compat 0.05
+      Module::Runtime 0.012
+      Package::DeprecationManager 0.11
+      Package::Stash 0.32
+      Package::Stash::XS 0.24
+      Params::Util 1.00
+      Scalar::Util 1.19
+      Sub::Exporter 0.980
+      Sub::Name 0.05
+      Task::Weaken 0
+      Try::Tiny 0.02
+      parent 0.223
+  Package-DeprecationManager-0.13
+    pathname: D/DR/DROLSKY/Package-DeprecationManager-0.13.tar.gz
+    provides:
+      Package::DeprecationManager 0.13
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.30
+      List::MoreUtils 0
+      Params::Util 0
+      Sub::Install 0
+      Test::Fatal 0
+      Test::More 0.88
+      Test::Requires 0
+      strict 0
+      warnings 0
+  Package-Stash-0.36
+    pathname: D/DO/DOY/Package-Stash-0.36.tar.gz
+    provides:
+      Package::Stash 0.36
+      Package::Stash::PP 0.36
+    requirements:
+      B 0
+      Carp 0
+      Config 0
+      Dist::CheckConflicts 0.02
+      ExtUtils::MakeMaker 6.30
+      File::Find 0
+      File::Spec 0
+      File::Temp 0
+      Getopt::Long 0
+      Module::Implementation 0.06
+      Package::Stash::XS 0.26
+      Scalar::Util 0
+      Symbol 0
+      Test::Fatal 0
+      Test::More 0.88
+      Test::Requires 0
+      Text::ParseWords 0
+      base 0
+      constant 0
+      lib 0
+      strict 0
+      warnings 0
+  Package-Stash-XS-0.28
+    pathname: D/DO/DOY/Package-Stash-XS-0.28.tar.gz
+    provides:
+      CompileTime undef
+      Package::Stash::XS 0.28
+    requirements:
+      ExtUtils::MakeMaker 6.30
+      XSLoader 0
+      strict 0
+      warnings 0
+  Params-Util-1.07
+    pathname: A/AD/ADAMK/Params-Util-1.07.tar.gz
+    provides:
+      Params::Util 1.07
+    requirements:
+      ExtUtils::CBuilder 0.27
+      ExtUtils::MakeMaker 6.52
+      File::Spec 0.80
+      Scalar::Util 1.18
+      Test::More 0.42
+      perl 5.00503
+  Pod-Coverage-0.23
+    pathname: R/RC/RCLAMP/Pod-Coverage-0.23.tar.gz
+    provides:
+      Pod::Coverage 0.23
+      Pod::Coverage::CountParents undef
+      Pod::Coverage::ExportOnly undef
+      Pod::Coverage::Extractor 0.23
+      Pod::Coverage::Overloader undef
+    requirements:
+      Devel::Symdump 2.01
+      ExtUtils::MakeMaker 0
+      Pod::Find 0.21
+      Pod::Parser 1.13
+      Test::More 0
+  Pod-Coverage-TrustPod-0.100003
+    pathname: R/RJ/RJBS/Pod-Coverage-TrustPod-0.100003.tar.gz
+    provides:
+      BaseWithNoPod undef
+      ChildWithPod undef
+      NoCoverage undef
+      Pod::Coverage::TrustPod 0.100003
+      PodFor undef
+      PodPrivate undef
+      TrustMe undef
+      TrustStar undef
+    requirements:
+      ExtUtils::MakeMaker 6.30
+      Pod::Coverage::CountParents 0
+      Pod::Eventual::Simple 0
+      Pod::Find 0
+      base 0
+      strict 0
+      warnings 0
+  Pod-Eventual-0.094001
+    pathname: R/RJ/RJBS/Pod-Eventual-0.094001.tar.gz
+    provides:
+      Pod::Eventual 0.094001
+      Pod::Eventual::Simple 0.094001
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.30
+      Mixin::Linewise::Readers 0.102
+      strict 0
+      warnings 0
+  Sub-Exporter-0.987
+    pathname: R/RJ/RJBS/Sub-Exporter-0.987.tar.gz
+    provides:
+      Sub::Exporter 0.987
+      Sub::Exporter::Util 0.987
+      Test::SubExporter::DashSetup undef
+      Test::SubExporter::Faux undef
+      Test::SubExporter::GroupGen undef
+      Test::SubExporter::GroupGenSubclass undef
+      Test::SubExporter::ObjGen undef
+      Test::SubExporter::ObjGen::Obj undef
+      Test::SubExporter::s_e undef
+    requirements:
+      Carp 0
+      Data::OptList 0.100
+      ExtUtils::MakeMaker 6.30
+      Params::Util 0.14
+      Sub::Install 0.92
+      strict 0
+      warnings 0
+  Sub-Exporter-Progressive-0.001011
+    pathname: F/FR/FREW/Sub-Exporter-Progressive-0.001011.tar.gz
+    provides:
+      Sub::Exporter::Progressive 0.001011
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0.88
+  Sub-Install-0.927
+    pathname: R/RJ/RJBS/Sub-Install-0.927.tar.gz
+    provides:
+      Sub::Install 0.927
+    requirements:
+      B 0
+      Carp 0
+      ExtUtils::MakeMaker 6.30
+      Scalar::Util 0
+      strict 0
+      warnings 0
+  Sub-Name-0.05
+    pathname: F/FL/FLORA/Sub-Name-0.05.tar.gz
+    provides:
+      Sub::Name 0.05
+    requirements:
+      ExtUtils::MakeMaker 0
+  Task-Weaken-1.04
+    pathname: A/AD/ADAMK/Task-Weaken-1.04.tar.gz
+    provides:
+      Task::Weaken 1.04
+    requirements:
+      ExtUtils::MakeMaker 6.42
+      File::Spec 0.80
+      Scalar::Util 1.14
+      Test::More 0.42
+      perl 5.005
+  Test-Fatal-0.013
+    pathname: R/RJ/RJBS/Test-Fatal-0.013.tar.gz
+    provides:
+      Test::Fatal 0.013
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.30
+      Test::Builder 0
+      Try::Tiny 0.07
+      strict 0
+      warnings 0
+  Test-Harness-3.30
+    pathname: L/LE/LEONT/Test-Harness-3.30.tar.gz
+    provides:
+      App::Prove 3.30
+      App::Prove::State 3.30
+      App::Prove::State::Result 3.30
+      App::Prove::State::Result::Test 3.30
+      TAP::Base 3.30
+      TAP::Formatter::Base 3.30
+      TAP::Formatter::Color 3.30
+      TAP::Formatter::Console 3.30
+      TAP::Formatter::Console::ParallelSession 3.30
+      TAP::Formatter::Console::Session 3.30
+      TAP::Formatter::File 3.30
+      TAP::Formatter::File::Session 3.30
+      TAP::Formatter::Session 3.30
+      TAP::Harness 3.30
+      TAP::Harness::Env 3.30
+      TAP::Object 3.30
+      TAP::Parser 3.30
+      TAP::Parser::Aggregator 3.30
+      TAP::Parser::Grammar 3.30
+      TAP::Parser::Iterator 3.30
+      TAP::Parser::Iterator::Array 3.30
+      TAP::Parser::Iterator::Process 3.30
+      TAP::Parser::Iterator::Stream 3.30
+      TAP::Parser::IteratorFactory 3.30
+      TAP::Parser::Multiplexer 3.30
+      TAP::Parser::Result 3.30
+      TAP::Parser::Result::Bailout 3.30
+      TAP::Parser::Result::Comment 3.30
+      TAP::Parser::Result::Plan 3.30
+      TAP::Parser::Result::Pragma 3.30
+      TAP::Parser::Result::Test 3.30
+      TAP::Parser::Result::Unknown 3.30
+      TAP::Parser::Result::Version 3.30
+      TAP::Parser::Result::YAML 3.30
+      TAP::Parser::ResultFactory 3.30
+      TAP::Parser::Scheduler 3.30
+      TAP::Parser::Scheduler::Job 3.30
+      TAP::Parser::Scheduler::Spinner 3.30
+      TAP::Parser::Source 3.30
+      TAP::Parser::SourceHandler 3.30
+      TAP::Parser::SourceHandler::Executable 3.30
+      TAP::Parser::SourceHandler::File 3.30
+      TAP::Parser::SourceHandler::Handle 3.30
+      TAP::Parser::SourceHandler::Perl 3.30
+      TAP::Parser::SourceHandler::RawTAP 3.30
+      TAP::Parser::YAMLish::Reader 3.30
+      TAP::Parser::YAMLish::Writer 3.30
+      Test::Harness 3.30
+    requirements:
+      ExtUtils::MakeMaker 0
+  Test-Pod-1.48
+    pathname: D/DW/DWHEELER/Test-Pod-1.48.tar.gz
+    provides:
+      Test::Pod 1.48
+    requirements:
+      File::Find 0
+      File::Spec 0
+      Module::Build 0.30
+      Pod::Simple 3.05
+      Test::Builder::Tester 1.02
+      Test::More 0.62
+  Test-Pod-Coverage-1.08
+    pathname: P/PE/PETDANCE/Test-Pod-Coverage-1.08.tar.gz
+    provides:
+      Nopod undef
+      Nosymbols undef
+      PC_Inherited undef
+      PC_Inherits undef
+      Privates undef
+      Simple undef
+      Test::Pod::Coverage 1.08
+    requirements:
+      ExtUtils::MakeMaker 0
+      Pod::Coverage 0
+      Test::Builder::Tester 0
+      Test::More 0
+  Test-Requires-0.07
+    pathname: T/TO/TOKUHIROM/Test-Requires-0.07.tar.gz
+    provides:
+      Test::Requires 0.07
+    requirements:
+      CPAN::Meta 0
+      CPAN::Meta::Prereqs 0
+      ExtUtils::MakeMaker 6.59
+      Module::Build 0.38
+      Test::Builder::Module 0
+      Test::More 0.61
+      perl 5.008_001
+  Try-Tiny-0.18
+    pathname: D/DO/DOY/Try-Tiny-0.18.tar.gz
+    provides:
+      Try::Tiny 0.18
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.30
+      base 0
+      constant 0
+      strict 0
+      warnings 0
+  Variable-Magic-0.53
+    pathname: V/VP/VPIT/Variable-Magic-0.53.tar.gz
+    provides:
+      Variable::Magic 0.53
+    requirements:
+      Carp 0
+      Config 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Test::More 0
+      XSLoader 0
+      base 0
+      perl 5.008
+  namespace-autoclean-0.15
+    pathname: E/ET/ETHER/namespace-autoclean-0.15.tar.gz
+    provides:
+      namespace::autoclean 0.15
+    requirements:
+      B::Hooks::EndOfScope 0.12
+      Class::MOP 0.80
+      ExtUtils::MakeMaker 6.30
+      List::Util 0
+      Module::Build::Tiny 0.030
+      namespace::clean 0.20
+      perl 5.006
+      strict 0
+      warnings 0
+  namespace-clean-0.24
+    pathname: R/RI/RIBASUSHI/namespace-clean-0.24.tar.gz
+    provides:
+      namespace::clean 0.24
+    requirements:
+      B::Hooks::EndOfScope 0.12
+      ExtUtils::CBuilder 0.27
+      Package::Stash 0.23
+      Test::More 0.88

@@ -1,0 +1,6 @@
+/*.tar.gz
+/Locale-Maketext-Lexicon-*
+/.build/
+/local/
+
+*.swp
