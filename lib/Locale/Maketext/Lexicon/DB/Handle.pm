@@ -1,4 +1,5 @@
 package Locale::Maketext::Lexicon::DB::Handle;
+# ABSTRACT: Maketext handle for L<Locale::Maketext::Lexicon::DB>
 
 use Moose;
 use namespace::autoclean;
@@ -75,6 +76,13 @@ sub _lexicon {
     return $lexicon;
 }
 
+=method maketext ($key)
+
+Return the compiled string represented by C<$key>. If C<$key> does not exist, an exception is
+raised, unless C<auto> is set in which case C<$key> is returned.
+
+=cut
+
 sub maketext {
     my $self = shift;
     my $key = shift;
@@ -98,6 +106,12 @@ sub maketext {
 
     return $value->( 'Locale::Maketext', @_ );
 }
+
+=head1 SEE ALSO
+
+L<Locale::Maketext::Lexicon::DB>
+
+=cut
 
 __PACKAGE__->meta->make_immutable;
 
