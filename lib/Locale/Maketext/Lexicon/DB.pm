@@ -11,8 +11,8 @@ use Log::Log4perl qw(:easy);
 
 This module enables you to crate a L<Locale::Maketext> lexicon in your database. The lexicon is
 compiled when C<get_handle> is called on the class. If a cache is defined then the lexicon is
-retreived from the cache instead of hitting the database each time. A class method is provided to
-clear the cache i.e. to invalidate it if the lexicon in the DB cahnges.
+retrieved from the cache instead of hitting the database each time. A class method is provided to
+clear the cache i.e. to invalidate it if the lexicon in the DB changes.
 
 =head1 SYNOPSIS
 
@@ -155,7 +155,7 @@ has language_mappings => (
 =method get_handle ([@languages])
 
 Returns a L<Locale::Maketext::Lexicon::DB::Handle> for this lexicon. if C<@languages> are not
-supplied then inspects the envronment to get the set locale.
+supplied then inspects the environment to get the set locale.
 
 =cut
 

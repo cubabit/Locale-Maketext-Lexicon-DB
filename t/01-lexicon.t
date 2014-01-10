@@ -87,8 +87,6 @@ $lex_insert_sth->execute('test', 'en', 'foo', 'foo');
 $lex_insert_sth->execute('test', 'en_gb', 'foo', 'foo gb');
 $lex_insert_sth->execute('test', 'en_gb', 'bar', 'bar [_1]'),
 
-use_ok('Test::Maketext');
-
 # test en_gb handle
 ok(my $handle = Test::Maketext->get_handle('en_gb'), 'get_handle');
 
