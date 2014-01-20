@@ -14,7 +14,7 @@ my $dbh = DBI->connect('dbi:SQLite:dbname=' . $db_file, '', '');
 
 my $memd = Test::Memcached->new;
 
-$memd->start;
+$memd->start if defined $memd;
 
 {
     package Test::Maketext;
@@ -33,22 +33,6 @@ $memd->start;
         return $dbh;
     }
 
-    has '+cache' => (
-        builder => '_build_cache',
-    );
-
-    sub _build_cache {
-        my $self = shift;
-
-        return Cache::Memcached::Fast->new({
-            servers => ['127.0.0.1:' . $memd->option('tcp_port')],
-        });
-    }
-
-    has '+cache_expiry_seconds' => (
-        default => 3_600,
-    );
-
     has '+lex' => (
         default => 'test',
     );
@@ -66,6 +50,24 @@ $memd->start;
             }
         },
     );
+
+    if (defined $memd) {
+        has '+cache' => (
+            builder => '_build_cache',
+        );
+
+        sub _build_cache {
+            my $self = shift;
+
+            return Cache::Memcached::Fast->new({
+                servers => ['127.0.0.1:' . $memd->option('tcp_port')],
+            });
+        }
+
+        has '+cache_expiry_seconds' => (
+            default => 3_600,
+        );
+    }
 }
 
 $dbh->do(q{
@@ -108,34 +110,36 @@ is(
     'maketext',
 );
 
-# change value - test cache
-$dbh->do(
-    q{
-        UPDATE lexicon
-        SET lex_value = ?
-        WHERE lang = ?
-        AND lex = ?
-        AND lex_key = ?
-    },
-    undef,
-    'foo changed',
-    'en_gb',
-    'test',
-    'foo',
-);
+if (defined $memd) {
+    # change value - test cache
+    $dbh->do(
+        q{
+            UPDATE lexicon
+            SET lex_value = ?
+            WHERE lang = ?
+            AND lex = ?
+            AND lex_key = ?
+        },
+        undef,
+        'foo changed',
+        'en_gb',
+        'test',
+        'foo',
+    );
 
-is(
-    $handle->maketext('foo') => 'foo gb',
-    'cached value is the same',
-);
+    is(
+        $handle->maketext('foo') => 'foo gb',
+        'cached value is the same',
+    );
 
-ok(Test::Maketext->clear_cache, 'clear cache');
+    ok(Test::Maketext->clear_cache, 'clear cache');
 
-is(
-    $handle->maketext('foo') => 'foo changed',
-    'cache is reloaded',
-);
+    is(
+        $handle->maketext('foo') => 'foo changed',
+        'cache is reloaded',
+    );
 
-$memd->stop;
+    $memd->stop;
+}
 
 done_testing();
