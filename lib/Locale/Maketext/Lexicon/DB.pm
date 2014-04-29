@@ -171,7 +171,7 @@ supplied then inspects the environment to get the set locale.
         @requested_langs = Locale::Maketext->_ambient_langprefs
             unless @requested_langs;
 
-        DEBUG('Languages asked for: ' . join (', ', @requested_langs));
+        TRACE('Languages asked for: ' . join (', ', @requested_langs));
 
         my $langs = [];
         for (@requested_langs) {
@@ -181,7 +181,7 @@ supplied then inspects the environment to get the set locale.
             }
         }
 
-        DEBUG('Lexicon will be searched for languages: ' . join(', ', @{ $langs }) );
+        TRACE('Lexicon will be searched for languages: ' . join(', ', @{ $langs }) );
 
         return Locale::Maketext::Lexicon::DB::Handle->new(
             _parent => $instance,
@@ -216,9 +216,11 @@ sub clear_cache {
 sub _cache_key_for_langs {
     my $self = shift;
 
-    return 'lexicon.' . join(
+    return join(
+        '.',
+        'lexicon',
         $self->lex,
-        '-', @{ shift() }
+        @{ shift() }
     )
 }
 

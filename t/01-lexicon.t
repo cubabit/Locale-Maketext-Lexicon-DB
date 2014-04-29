@@ -110,7 +110,8 @@ is(
     'maketext',
 );
 
-if (defined $memd) {
+SKIP: {
+    skip 'Skipping cached tests as memcached not available', 3 unless defined $memd;
     # change value - test cache
     $dbh->do(
         q{

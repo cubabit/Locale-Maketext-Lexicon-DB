@@ -32,17 +32,17 @@ sub _lexicon {
         local $Storable::Eval = 1;
         $lexicon = $self->_parent->cache->get($cache_key);
 
-        DEBUG('Retrieved lexicon from cache')
+        TRACE('Retrieved lexicon from cache')
             if (defined $self->_parent->cache);
     }
 
     unless (keys %{ $lexicon }) {
-        DEBUG('Hitting database for lexicon');
+        TRACE('Hitting database for lexicon');
 
         my $dbh = $self->_parent->dbh;
 
         for my $lang (@{ $self->langs }) {
-            DEBUG('Getting lexicon entries for language ' . $lang);
+            TRACE('Getting lexicon entries for language ' . $lang);
 
             my $lexicon_st = $dbh->prepare(q{
                 SELECT *
@@ -66,7 +66,7 @@ sub _lexicon {
 
         if ($self->_parent->has_cache and keys %{ $lexicon }) {
             local $Storable::Deparse = 1;
-            DEBUG('Storing lexicon in cache');
+            TRACE('Storing lexicon in cache');
             $self->_parent->cache->set($cache_key => $lexicon, $self->_parent->cache_expiry_seconds);
         }
     }
@@ -116,4 +116,3 @@ L<Locale::Maketext::Lexicon::DB>
 __PACKAGE__->meta->make_immutable;
 
 1;
-
