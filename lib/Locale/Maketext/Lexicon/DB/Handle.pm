@@ -58,7 +58,6 @@ sub _lexicon {
 
                 my $value   = $lex_entry->{lex_value};
                 $value      =~ tr/\r//d;
-                $value      =~ s/\n/\\n/g;
 
                 $lexicon->{ $key } = Locale::Maketext->_compile($value);
             }
